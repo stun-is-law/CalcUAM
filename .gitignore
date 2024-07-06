@@ -1,0 +1,9 @@
+/shelf/
+/workspace.xml
+
+!target/
+
+target/*
+!target/site/
+
+.idea/
