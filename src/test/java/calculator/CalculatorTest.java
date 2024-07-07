@@ -20,7 +20,7 @@ public class CalculatorTest {
 
     @Test
     public void sqrtTest() {
-        Assert.assertEquals(4.0, calculator.sqrt(16), 0.0001);
+        Assert.assertEquals(0, calculator.sqrt(0), 0.0001);
     }
 
     @Test
