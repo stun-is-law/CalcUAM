@@ -20,7 +20,7 @@ public class CalculatorTest {
 
     @Test
     public void sqrtTest() {
-        Assert.assertEquals(0, calculator.sqrt(0), 0.0001);
+        Assert.assertEquals(2.0, calculator.sqrt(4), 0.0001);
     }
 
     @Test
@@ -60,7 +60,7 @@ public class CalculatorTest {
 
     @Test
     public void convertFarenheitToCelsiusTest() {
-        Assert.assertEquals(0.0, calculator.convertFarenheitToCelsius(32), 0.0001);
+        Assert.assertEquals(1170.0, calculator.convertFarenheitToCelsius(2138), 0.0001);
     }
 
     @Test
@@ -71,11 +71,15 @@ public class CalculatorTest {
     @Test
     public void factorialTest() {
         Assert.assertEquals(120, calculator.factorial(5));
+        Assert.assertEquals(1, calculator.factorial(0));
+        Assert.assertEquals(1, calculator.factorial(1));
+        Assert.assertEquals(2, calculator.factorial(2));
+        Assert.assertEquals(6, calculator.factorial(3));    
     }
 
     @Test
     public void fibbonacciTest() {
-        Assert.assertEquals(5, calculator.fibbonacci(5));
+        Assert.assertEquals(8, calculator.fibbonacci(6));
     }
 
     @Test
